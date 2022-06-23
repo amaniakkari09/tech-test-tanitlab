@@ -1,0 +1,103 @@
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="card">
+                <div class="title">User Detail</div>
+                <div class="info">
+                    <div class="row">
+                        <div class="informations">Informations</div>
+                        <div class="col-4">
+                            <span id="heading">Name</span><br>
+                            <span id="details">{{user.name}}</span>
+                        </div>
+                        <div class="col-4 pull-right">
+                            <span id="heading">UserName</span><br>
+                            <span id="details">{{user.username}}</span>
+                        </div>
+                        <div class="col-4 pull-right">
+                            <span id="heading">Email</span><br>
+                            <span id="details">{{user.email}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="informations">Company</div>
+                        <div class="col-4">
+                            <span id="heading">Name</span><br>
+                            <span id="details">{{user.company.name}}</span>
+                        </div>
+                        <div class="col-4 pull-right">
+                            <span id="heading">lngcatchPhrase</span><br>
+                            <span id="details">{{user.company.catchPhrase}}</span>
+                        </div>
+                        <div class="col-4 pull-right">
+                            <span id="heading">Bs</span><br>
+                            <span id="details">{{user.company.bs}}</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="informations">Address</div>
+                    <div class="row">
+                        <div class="col-9">
+                            <span id="name">City</span>
+                        </div>
+                        <div class="col-3">
+                            <span id="price">{{user.address.city}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            <span id="name">Street</span>
+                        </div>
+                        <div class="col-3">
+                            <span id="price">{{user.address.street}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            <span id="name">Suite</span>
+                        </div>
+                        <div class="col-3">
+                            <span id="price">{{user.address.suite}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            <span id="name">ZipCode</span>
+                        </div>
+                        <div class="col-3">
+                            <span id="price">{{user.address.zipcode}}</span>
+                        </div>
+                    </div>
+                    <div class="informations" style="padding: 0 10%; color: rgba(69, 73, 138, 0.59);">Geo</div>
+                    <div class="row">
+                        <div class="col-9">
+                            <span id="name">lat</span>
+                        </div>
+                        <div class="col-3">
+                            <span id="price">{{user.address.geo.lat}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            <span id="name">lng</span>
+                        </div>
+                        <div class="col-3">
+                            <span id="price">{{user.address.geo.lng}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="row">
+                        <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/YBWc55P.png"></div>
+                        <div class="col-10">{{user.phone}} <a
+                                style="float:left ; margin-left: 37em;">{{user.website}}</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

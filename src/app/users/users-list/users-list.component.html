@@ -1,0 +1,54 @@
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+
+            <div class="col-lg-8 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Technical Test</h4>
+                        <p class="card-description">
+                            List of users
+                        </p>
+                        <mat-form-field appearance="standard">
+                            <mat-label>Filter</mat-label>
+                            <input matInput (keyup)="applyFilter($event)" placeholder="Search columns" #input>
+                        </mat-form-field>
+
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ID No.</th>
+                                        <th>Name</th>
+                                        <th>UserName</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let user of userList| paginate
+                                    : {
+                                        itemsPerPage: tableSize,
+                                        currentPage: page,
+                                        totalItems: count
+                                      };
+                                let i = index" (click)="getUserDetail(user.id)">
+                                        <td>{{user.id}}</td>
+                                        <td>{{user.name}}</td>
+                                        <td>{{user.username}}</td>
+                                        <td>{{user.email}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-center">
+                                <pagination-controls previousLabel="Prev" nextLabel="Next"
+                                    (pageChange)="onTableDataChange($event)">
+                                </pagination-controls>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

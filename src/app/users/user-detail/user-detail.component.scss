@@ -1,0 +1,122 @@
+body {
+    background: #ddd3;
+    height: 100vh;
+    vertical-align: middle;
+    display: flex;
+    font-family: Muli;
+    font-size: 14px;
+}
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+.padding {
+    padding: 5rem
+}
+
+.card {
+    margin: auto;
+    width: 70%;
+    max-width: 900px;
+    padding: 4vh 0;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top: 3px solid rgb(9, 22, 70);
+    border-bottom: 3px solid rgb(9, 22, 70);
+    border-left: none;
+    border-right: none;
+}
+
+@media(max-width:768px) {
+    .card {
+        width: 90%;
+    }
+}
+
+.title {
+    color: rgb(8, 29, 151);
+    font-weight: 600;
+    margin-bottom: 2vh;
+    padding: 0 8%;
+    font-size: initial;
+}
+
+.informations {
+    color: rgba(57, 62, 129, 0.59);
+    font-weight: 600;
+    margin-bottom: 2vh;
+    padding: 0 8%;
+    font-size: small;
+}
+
+#details {
+    font-weight: 400;
+}
+
+.info {
+    padding: 5% 8%;
+}
+
+.info .col-5 {
+    padding: 0;
+}
+
+#heading {
+    color: grey;
+    line-height: 6vh;
+}
+
+.address {
+    background-color: #ddd3;
+    padding: 2vh 8%;
+    font-weight: 400;
+    line-height: 2.5;
+}
+
+.address .col-3 {
+    padding: 0;
+}
+
+.total {
+    padding: 2vh 8%;
+    color: rgb(252, 103, 49);
+    font-weight: bold;
+}
+
+.total .col-3 {
+    padding: 0;
+}
+
+.footer {
+    padding: 0 8%;
+    font-size: x-small;
+    color: black;
+}
+
+.footer img {
+    height: 5vh;
+    opacity: 0.2;
+}
+
+.footer a {
+    color: rgb(252, 103, 49);
+}
+
+.footer .col-10,
+.col-2 {
+    display: flex;
+    padding: 3vh 0 0;
+    align-items: center;
+}
+
+.footer .row {
+    margin: 0;
+}
